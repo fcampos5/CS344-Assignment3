@@ -41,11 +41,12 @@ void createChildProcess()
 		while (token != NULL) 
 		{	
 		// Checks token to see if it has "$$"
+			token = strtok(NULL, " ");
 			//if (strstr(token,"$$") != NULL) 
 			//{
 			//	//Create new char[] where $$ in token is replaced with getpid() and add to newargv[]
+			//	printf("I found $$ \n");
 			//}
-			token = strtok(NULL, " ");
 			newargv[i] = token;
 			i++;			
 		}
